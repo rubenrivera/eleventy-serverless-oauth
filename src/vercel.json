@@ -1,7 +1,7 @@
 {
   "rewrites": [
         { "source": "/(.*)", "statusCode": 404, "destination": "/404" },
-        { "source": "/secure/", "destination": "/.netlify/functions/dynamic", "statusCode": 200 },
+        { "source": "/secure/", "destination": "/api/dynamic", "statusCode": 200 },
         { "source": "/", "destination": "/secure/", "statusCode": 302, "has": [{ "type": "cookie", "key": "_11ty_oauth_token"}]}
       ]
 }
